@@ -1,4 +1,4 @@
-package in.mahind.bootcamp.nested.shadowing;
+package in.mahind.bootcamp.inner.shadowing;
 
 public class ShadowTest {
 

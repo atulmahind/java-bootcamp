@@ -1,4 +1,4 @@
-package in.mahind.bootcamp.nested;
+package in.mahind.bootcamp.inner;
 
 public class TopLevelClass {
 
