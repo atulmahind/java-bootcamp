@@ -6,6 +6,7 @@ public class OuterClass {
     static String staticOuterField = "Static outer field";
 
     private class InnerClass {
+        static final String staticInnerField = "Inner field";
         void accessMembers() {
             System.out.println(outerField);
             System.out.println(staticOuterField);
