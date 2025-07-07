@@ -3,6 +3,10 @@ package in.mahind.bootcamp.generics;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Reference: https://www.youtube.com/watch?v=jWcNMqq0pWw
+ */
+
 class Animal{}
 class Dog extends Animal{}
 class Terrier extends Dog{}

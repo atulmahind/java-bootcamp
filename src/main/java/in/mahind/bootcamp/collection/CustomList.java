@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/*
+Reference: https://medium.com/@ksaquib/why-understanding-iterators-is-a-game-changer-for-java-developers-f241f4a92f3a
+ */
+
 public class CustomList implements Iterable<List<Integer>> {
 
     private int[] data;
