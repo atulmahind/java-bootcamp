@@ -21,7 +21,10 @@ public class Whatever {
     }
 
     public static void main(String[] args) {
-        System.out.println(initializeClassVariable());
+
+        System.out.println(myVar);
+
+//        System.out.println(initializeClassVariable());
 //        System.out.println("myVar = " + Whatever.myVar);
 //        System.out.println("-----------------------------------------");
 //        Whatever whatever = new Whatever();

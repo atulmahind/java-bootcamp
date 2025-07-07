@@ -3,18 +3,18 @@ package in.mahind.bootcamp.staticfields;
 public class BicycleDemo {
 
     public static void main(String[] args) {
-        //System.out.println("Hello " + args[0] + " " + args[1]);
-       // System.out.println(Whatever.myVar);
+        // System.out.println("Hello " + args[0] + " " + args[1]);
+        // System.out.println(Whatever.myVar);
 
         //String[] myArray = {"Hello", "World", "UK", "India", "Germany", "China"};
-//        arrayPrint(myArray);
+        //  arrayPrint(myArray);
 
-   //     varargsPrint("Hello", "World", "UK", "India", "Germany", "China");
+        // varargsPrint("Hello", "World", "UK", "India", "Germany", "China");
         //varargsPrint(myArray);
 
-    Bicycle mountainBike = new Bicycle(5, 2, 3);
-    Bicycle tandemBike = new Bicycle(5, 3, 3);
-    Bicycle fixedGearBike = new Bicycle(2, 5, 5);
+        Bicycle mountainBike = new Bicycle(5, 2, 3);
+        Bicycle tandemBike = new Bicycle(5, 3, 3);
+        Bicycle fixedGearBike = new Bicycle(2, 5, 5);
 
         System.out.println(mountainBike.numberOfBicycles);
         System.out.println(mountainBike.getNumberOfBicycles());
