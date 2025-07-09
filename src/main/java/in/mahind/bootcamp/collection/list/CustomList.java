@@ -1,4 +1,4 @@
-package in.mahind.bootcamp.collection;
+package in.mahind.bootcamp.collection.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
