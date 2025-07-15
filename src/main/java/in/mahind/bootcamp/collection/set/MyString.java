@@ -1,6 +1,8 @@
 package in.mahind.bootcamp.collection.set;
 
-public class MyString implements Comparable<MyString> {
+public class MyString
+//        implements Comparable<MyString>
+{
     private final String string;
 
     public MyString(String string) {
@@ -17,4 +19,9 @@ public class MyString implements Comparable<MyString> {
                 "string='" + string + '\'' +
                 '}';
     }
+
+//    @Override
+//    public int compareTo(MyString o) {
+//        return this.string.compareTo(o.string);
+//    }
 }

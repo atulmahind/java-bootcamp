@@ -93,7 +93,7 @@ public class SetDemo {
         - Underlying data structures is a Balanced Tree
         - Duplicates are NOT allowed
         - Insertion order is NOT preserved
-        - Heterogenous objects are NOT allowed (otherwise RE: ClassCastException)
+        - Heterogeneous objects are NOT allowed (otherwise RE: ClassCastException)
         - 'null' insertion is allowed*
         - All elements are inserted based on some sorting order
             - DNSO
@@ -115,7 +115,7 @@ public class SetDemo {
 //        System.out.println(ts);
 
         /*
-        -- Null Accesptance --
+        -- Null Acceptance --
 
         ts.add(null);
                             A       B       C
@@ -182,15 +182,15 @@ public class SetDemo {
             1. compare
             2. equals
 
-        1. public int compare(T o1, T o2)
-                    |
-                    |-- returns -ve iff o1 is before o2
-                    |
-                    |-- returns +ve iff o1 is after o2
-                    |
-                    |-- returns 0 iff o1 and o2 are equal
+            1. public int compare(T o1, T o2)
+                        |
+                        |-- returns -ve iff o1 is before o2
+                        |
+                        |-- returns +ve iff o1 is after o2
+                        |
+                        |-- returns 0 iff o1 and o2 are equal
 
-        2. public boolean equals(Object obj)
+            2. public boolean equals(Object obj)
 
         Whenever we are implementing compartor interface we must provide implementation ONLY for compare() method
             We are not required to provide implementation for equals() method ->
@@ -199,6 +199,32 @@ public class SetDemo {
 
         /*
         Exercise: Write a program to add numbers into a tree set with a descending order
+
+        Add -> 10, 0, 15, 5, 20, 20
+
+         */
+
+//        TreeSet integerSet = new TreeSet();
+//        integerSet.add(10);
+//        integerSet.add(0);
+//        integerSet.add(15);
+//        integerSet.add(5);
+//        integerSet.add(20);
+//        integerSet.add(20);
+//        System.out.println(integerSet);
+
+        /*
+
+        When to use Comparable and Comparator ?
+
+        There are three categories of classes:
+            1. Predefined Comparable classes            =>      DNSO        =>      Comparator (for customized sorting)
+               e.g. String, Float, etc.
+            2. Predefined non-Comparable classes        =>      -NA-        =>      Comparator (for customized sorting)
+            3. For custom classes, the author may
+               define DNSO by using Comparable (I)      =>      DNSO?       =>      Comparator (for customized sorting)
+               e.g. Employee, Student
+
          */
 
     }
