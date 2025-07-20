@@ -1,6 +1,7 @@
 package in.mahind.bootcamp.collection.set;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class SetDemo {
 
@@ -226,6 +227,42 @@ public class SetDemo {
                e.g. Employee, Student
 
          */
+
+        /*
+
+        NavigableSet (I)
+
+        Child interface of SortedSet and it defines several methods for navigation purposes
+
+        Methods
+
+            - floor(e)              =>          returns highest element which is <= e
+            - lower(e)              =>          returns highest element which is < e
+
+            - ceiling(e)            =>          returns lowest element which is >= e
+            - higher(e)             =>          returns lowest element which is > e
+
+            - pollFirst()           =>          removes and returns first element
+            - pollLast()            =>          removes and returns last element
+
+            - descendingSet         =>          returns this NavigableSet in reverse order
+         */
+
+        TreeSet<Integer> ts = new TreeSet<>();
+        ts.add(1000);
+        ts.add(2000);
+        ts.add(3000);
+        ts.add(4000);
+        ts.add(5000);
+        System.out.println(ts);                                                // [ 1000, 2000, ... , 5000 ]
+        System.out.println("ts.ceiling(2000)\t" + ts.ceiling(2000));        // 2000
+        System.out.println("ts.higher(2000)\t" + ts.higher(2000));          // 3000
+        System.out.println("ts.floor(2500)\t" + ts.floor(2500));            // 2000
+        System.out.println("ts.lower(3000)\t" + ts.lower(3000));            // 2000
+        System.out.println("ts.pollFirst()\t" + ts.pollFirst());               // 1000
+        System.out.println("ts.pollLast()\t" + ts.pollLast());                 // 5000
+        System.out.println("ts.descendingSet()\t" + ts.descendingSet());       // [ 4000, 3000, 2000 ]
+        System.out.println(ts);                                                // [ 2000, 3000, 4000 ]
 
     }
 }
