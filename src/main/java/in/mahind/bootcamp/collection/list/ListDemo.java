@@ -1,4 +1,4 @@
-package in.mahind.bootcamp.collection;
+package in.mahind.bootcamp.collection.list;
 
 public class ListDemo {
 
